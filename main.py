@@ -1,5 +1,6 @@
 # Import NeedlemanWunsch class and read_fasta function
 from align import read_fasta, NeedlemanWunsch
+import numpy as np
 
 def main():
     """
@@ -15,11 +16,29 @@ def main():
 
     # TODO Align all species to humans and print species in order of most similar to human BRD
     # using gap opening penalty of -10 and a gap extension penalty of -1 and BLOSUM62 matrix
-    pass
+    gap_open = -10
+    gap_extend = -1
+
+    nw = NeedlemanWunsch(gap_open=gap_open, gap_extend=gap_extend, sub_matrix_file="substitution_matrices/BLOSUM62.mat")
+    score_hg, alignedA, alignedB = nw.align(hs_seq, gg_seq)
+    score_hm, alignedA, alignedB = nw.align(hs_seq, mm_seq)
+    score_hr, alignedA, alignedB = nw.align(hs_seq, br_seq)
+    score_ht, alignedA, alignedB = nw.align(hs_seq, tt_seq)
+
+    
 
     # TODO print all of the alignment score between each species BRD2 and human BRD2
     # using gap opening penalty of -10 and a gap extension penalty of -1 and BLOSUM62 matrix
-    pass
+    nameList = ['Gallus_gallus','Mus_musculus','Balaeniceps','tursiops']
+    scoreList = np.array([score_hg,score_hm,score_hr,score_ht])
+
+    sorted_indices = np.argsort(scoreList)
+
+    # Use sorted_indices to sort nameList
+    sorted_nameList = [nameList[i] for i in sorted_indices]
+
+    print("Original nameList:", nameList)
+    print("Sorted nameList:", sorted_nameList)
     
 
 if __name__ == "__main__":
