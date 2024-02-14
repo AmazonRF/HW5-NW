@@ -42,7 +42,7 @@ seqB = "ABCDEFGHIKLMNPQRSTVWY"
 # Loading from FASTA files
 seq1, _ = read_fasta('path/to/sequence1.fasta')
 seq2, _ = read_fasta('path/to/sequence2.fasta')
-
+```
 ### Performing Sequence Alignment
 
 Instantiate the Needleman-Wunsch class with the desired scoring matrix and gap penalties, then call the `align` method with your sequences:
@@ -60,7 +60,7 @@ print(f"Aligned Sequence 1: {aligned_seq1}")
 print(f"Aligned Sequence 2: {aligned_seq2}")
 ```
 
-### Species Order
+# Species Order
 
 In this project, different species gene are applied to alignment and analysis base on the sequence similarity with human. The order of species is as follows:
 
