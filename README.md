@@ -68,7 +68,7 @@ In this project, different species gene are applied to alignment and analysis ba
 2. `Gallus_gallus`
 3. `Mus_musculus`
 4. `tursiops`
-
+Readme file above are generated with the help of chatGPT.
 
 # Grading
 ## Code (6 points)
