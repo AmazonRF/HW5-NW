@@ -11,7 +11,7 @@ pythonpath = [
 ]
 
 [project]
-name = "seqparser"
+name = "NeedlemanWunsch"
 authors = [{name = "Yifei Chen", email = "Yifei.chen@ucsf.edu"}]
 readme = "README.md"
 license = {file = "LICENSE"}
