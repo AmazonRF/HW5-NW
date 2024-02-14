@@ -18,8 +18,8 @@ license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
 dependencies = [
-    "pytest", "numpy", "typing", "NeedlemanWunsch"
+    "pytest", "numpy", "typing"
 ]
 
 [project.urls]
-Home = "https://github.com/AmazonRF/HW5-NW"
+Home = "https://github.com/AmazonRF/HW5-NW/"
