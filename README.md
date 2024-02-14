@@ -24,6 +24,7 @@ Ensure you have Python and NumPy installed on your system. If NumPy is not alrea
 
 ```bash
 pip install numpy
+```
 
 ## Usage
 
@@ -58,6 +59,15 @@ print(f"Alignment Score: {alignment_score}")
 print(f"Aligned Sequence 1: {aligned_seq1}")
 print(f"Aligned Sequence 2: {aligned_seq2}")
 
+
+### Species Order
+
+In this project, different species gene are applied to alignment and analysis base on the sequence similarity with human. The order of species is as follows:
+
+1. `Balaeniceps`
+2. `Gallus_gallus`
+3. `Mus_musculus`
+4. `tursiops`
 
 
 # Grading
