@@ -58,7 +58,7 @@ alignment_score, aligned_seq1, aligned_seq2 = nw_aligner.align(seqA, seqB)
 print(f"Alignment Score: {alignment_score}")
 print(f"Aligned Sequence 1: {aligned_seq1}")
 print(f"Aligned Sequence 2: {aligned_seq2}")
-
+```
 
 ### Species Order
 
